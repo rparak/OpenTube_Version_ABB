@@ -29,6 +29,11 @@ We would like to thank our partners SMC, B&R Automation and ABB Robotics for the
 
 The project was realized at the Institute of Automation and Computer Science, Brno University of Technology, Faculty of Mechanical Engineering (NETME Centre - Cybernetics and Robotics Division).
 
+<p align="center">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/opentube1.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/opentube2.png" width="550" height="325">
+</p>
+
 **Unpacking a station (/Final/Solution_Sorting_Production_Line.rspag):**
 1. On the File tab, click Open and then browse to the folder and select the Pack&Go file, the Unpack & Work wizard opens.
 2. In the Welcome to the Unpack & Work Wizard page, click Next.
@@ -63,7 +68,14 @@ https://brno.rozhlas.cz/vedci-z-brnenskeho-vut-navrhli-roboticke-pracoviste-pomu
 
 **Repositary [/OpenTube_Version_ABB/]:**
 ```bash
+Industrial Robot
+[ Individual projects for ABB robots (single-arm, double-arm) ] /ABB_Robot_Studio/
 
+Programmable logic controller(PLC)
+[ B&R Automation Studio Project ] /BaR_Automation_Studio/
+
+Computer-aided design (CAD)
+[ Individual designs of robotic workplaces ] /CAD/
 ```
 
 ## Result:
