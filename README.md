@@ -78,6 +78,15 @@ Computer-aided design (CAD)
 [ Individual designs of robotic workplaces ] /CAD/
 ```
 
+## Application:
+
+**Wiring Diagram (Design A, B):**
+
+<p align="center">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/wiring_scheme.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/wiring_diagram_new.png" width="550" height="325">
+</p>
+
 ## Result:
 Youtube: https://www.youtube.com/watch?v=WiMssWtnBL8&t=161s
 
