@@ -34,7 +34,7 @@ The project was realized at the Institute of Automation and Computer Science, Br
  <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/presentation_2.png" width="550" height="325">
 </p>
 
-**Unpacking a station (/Final/Solution_Sorting_Production_Line.rspag):**
+**Unpacking a station (/ABB_Robot_Studio/*.rspag):**
 1. On the File tab, click Open and then browse to the folder and select the Pack&Go file, the Unpack & Work wizard opens.
 2. In the Welcome to the Unpack & Work Wizard page, click Next.
 3. In the Select package page, click Browse and then select the Pack & Go file to unpack and the Target folder. Click Next.
