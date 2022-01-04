@@ -34,18 +34,23 @@ The project was realized at the Institute of Automation and Computer Science, Br
 **For more information, see the following links (Czech language only):**
 
 Youtube (Brno University of Technology): 
+
 https://www.youtube.com/watch?v=o7Yv20GCgag
 
 The University Hospital Brno: 
+
 https://www.fnbrno.cz/robot-z-vut-usetri-praci-laborantum-pomahat-by-mohl-se-vzorky-covid-19-ve-fn-brno/t6854
 
 Faculty of Mechanical Engineering (EN): 
+
 https://www.fme.vutbr.cz/en/fakulta/aktuality/67863
 
 CT24: 
+
 https://www.ceskatelevize.cz/porady/1097181328-udalosti/220411000100514/video/767623
 
 Czech radio:
+
 https://brno.rozhlas.cz/vedci-z-brnenskeho-vut-navrhli-roboticke-pracoviste-pomuze-laborantum-zpracovat-8205399
 
 ## Project Hierarchy:
