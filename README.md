@@ -96,6 +96,9 @@ Computer-aided design (CAD)
 
 <p align="center">
  <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_dual_arm_ph1.PNG" width="800" height="450">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision1.PNG" width="800" height="450">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision2.PNG" width="800" height="450">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision3.PNG" width="800" height="450">
 </p>
 
 ## Result:
