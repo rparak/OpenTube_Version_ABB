@@ -30,7 +30,24 @@ The project was realized at the Institute of Automation and Computer Science, Br
 4. In the Library handling page select the target library. Two options are available, Load files from local PC or Load files from Pack & Go. Click the option to select the location for loading the required files, and click Next.
 5. In the Virtual Controller page, select the RobotWare version and then click Locations to access the RobotWare Add-in and Media pool folders. Optionally, select the check box to automatically restore backup. Click Next.
 6. In the Ready to unpack page, review the information and then click Finish.
-7. 
+
+**For more information, see the following links (Czech language only):**
+
+Youtube (Brno University of Technology): 
+https://www.youtube.com/watch?v=o7Yv20GCgag
+
+The University Hospital Brno: 
+https://www.fnbrno.cz/robot-z-vut-usetri-praci-laborantum-pomahat-by-mohl-se-vzorky-covid-19-ve-fn-brno/t6854
+
+Faculty of Mechanical Engineering (EN): 
+https://www.fme.vutbr.cz/en/fakulta/aktuality/67863
+
+CT24: 
+https://www.ceskatelevize.cz/porady/1097181328-udalosti/220411000100514/video/767623
+
+Czech radio:
+https://brno.rozhlas.cz/vedci-z-brnenskeho-vut-navrhli-roboticke-pracoviste-pomuze-laborantum-zpracovat-8205399
+
 ## Project Hierarchy:
 
 **Repositary [/OpenTube_Version_ABB/]:**
