@@ -83,7 +83,7 @@ Computer-aided design (CAD)
 **Wiring Diagram:**
 
 <p align="center">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/wiring_scheme.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/wiring_scheme.png" width="800" height="450">
 </p>
 
 **3D Print:**
@@ -95,7 +95,7 @@ Computer-aided design (CAD)
 **ABB RobotStudio:**
 
 <p align="center">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_dual_arm_ph1.PNG" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_dual_arm_ph1.PNG" width="800" height="450">
 </p>
 
 ## Result:
