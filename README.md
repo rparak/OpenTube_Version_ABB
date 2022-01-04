@@ -89,7 +89,7 @@ Computer-aided design (CAD)
 **3D Print:**
 
 <p align="center">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/3d_print.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/3d_print.png" width="800" height="450">
 </p>
 
 **ABB RobotStudio:**
