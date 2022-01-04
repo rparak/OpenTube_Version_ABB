@@ -30,8 +30,8 @@ We would like to thank our partners SMC, B&R Automation and ABB Robotics for the
 The project was realized at the Institute of Automation and Computer Science, Brno University of Technology, Faculty of Mechanical Engineering (NETME Centre - Cybernetics and Robotics Division).
 
 <p align="center">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/presentation_1.png" width="550" height="325">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/presentation_2.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/presentation_1.png" width="700" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/presentation_2.png" width="700" height="325">
 </p>
 
 **Unpacking a station (/Final/Solution_Sorting_Production_Line.rspag):**
