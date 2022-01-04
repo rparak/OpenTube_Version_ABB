@@ -80,11 +80,10 @@ Computer-aided design (CAD)
 
 ## Application:
 
-**Wiring Diagram (Design A, B):**
+**Wiring Diagram:**
 
 <p align="center">
  <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/wiring_scheme.png" width="550" height="325">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/wiring_diagram_new.png" width="550" height="325">
 </p>
 
 ## Result:
