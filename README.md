@@ -95,10 +95,7 @@ Computer-aided design (CAD)
 **ABB RobotStudio:**
 
 <p align="center">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_dual_arm_ph1.png" width="550" height="325">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision1.png" width="550" height="325">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision2.png" width="550" height="325">
- <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision3.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_dual_arm_ph1.PNG" width="550" height="325">
 </p>
 
 ## Result:
