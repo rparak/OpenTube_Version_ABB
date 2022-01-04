@@ -4,7 +4,13 @@
 
 **Software:**
 ```bash
-B&R Automation Studio, ABB RobotStudio
+B&R Automation Studio (Version: V4.9.3.144 SP)
+AS Runtime: B4.82
+mapp View: 5.14.2
+
+ABB RobotStudio 2021.2 (Version: 21.2.9526.0)
+RobotWare Dual-ARM: 6.12.02
+RobotWare Single-ARM: 7.3.0
 ```
 
 | Software/Package           | Link                                                                                  |
