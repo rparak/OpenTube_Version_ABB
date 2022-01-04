@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.9.3.144 FileVersion="4.9"?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="JXCP1" Type="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" Version="0.0.0.0" OrderNumber="JXCP1" VendorAddress="jxcp1">
+    <Connection Connector="PN1" TargetModule="X20IF10E1_1" TargetConnector="IF1" />
+    <Parameter ID="DtmId" Value="779c0f83-ae24-4d7d-aac0-6ebd8ac22143" />
+  </Module>
+  <Module Name="JXCP1a" Type="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" Version="0.0.0.0" OrderNumber="JXCP1" VendorAddress="jxcp2">
+    <Connection Connector="PN1" TargetModule="JXCP1" TargetConnector="PN2" />
+    <Parameter ID="DtmId" Value="4e71c07c-1efc-4f17-b3d1-8634b62256f2" />
+  </Module>
+  <Module Name="JXCP1b" Type="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" Version="0.0.0.0" OrderNumber="JXCP1" VendorAddress="jxcp3">
+    <Connection Connector="PN1" TargetModule="JXCP1a" TargetConnector="PN2" />
+    <Parameter ID="DtmId" Value="088ea47c-180c-45a3-bc50-b9a7d5240fa6" />
+  </Module>
+  <Module Name="JXCP1c" Type="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" Version="0.0.0.0" OrderNumber="JXCP1" VendorAddress="jxcp4">
+    <Connection Connector="PN1" TargetModule="JXCP1b" TargetConnector="PN2" />
+    <Parameter ID="DtmId" Value="e8987b42-b774-4db3-be9b-a1b4a4e86696" />
+  </Module>
+  <Module Name="JXCP1d" Type="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" Version="0.0.0.0" OrderNumber="JXCP1" VendorAddress="jxcp5">
+    <Connection Connector="PN1" TargetModule="JXCP1c" TargetConnector="PN2" />
+    <Parameter ID="DtmId" Value="b2fb138e-c25f-4440-beea-46fc2eeba0f1" />
+  </Module>
+  <Module Name="X20BB81" Type="X20BB81" Version="1.0.2.0" />
+  <Module Name="X20BC1083" Type="X20BC1083" Version="2.11.1.0">
+    <Connection Connector="PLK1" TargetModule="X20CP1382" TargetConnector="IF3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+    <Connection Connector="SL" TargetModule="X20BB81" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20CP1382" TargetConnector="IF6" />
+  </Module>
+  <Module Name="X20BM11a" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM11" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11b" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM11a" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20BM11c" Type="X20BM11" Version="1.0.0.1">
+    <Connection Connector="X2X1" TargetModule="X20BM11b" TargetConnector="X2X2" />
+  </Module>
+  <Module Name="X20CM8281" Type="X20CM8281" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20CM8281a" Type="X20CM8281" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11a" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20CM8281b" Type="X20CM8281" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12b" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11b" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20CM8281c" Type="X20CM8281" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12c" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11c" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20CP1382" Type="X20CP1382" Version="1.11.0.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X1" />
+    </Module>
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X2" />
+    </Module>
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.11.0.0">
+      <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
+      <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X3" />
+    <Parameter ID="X3Channel12Source" Value="PWMout" />
+  </Module>
+    <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
+    <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
+    <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="DNAConfiguration" Value="manual" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="YuMiLAB_project_Config1" />
+    <Parameter ID="Simulation" Value="1" />
+    <Parameter ID="SystemTick" Value="2000" />
+    <Parameter ID="TaskClassIdleTime" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
+    <Parameter ID="Cyclic2Duration" Value="10000" />
+    <Parameter ID="Cyclic2Tolerance" Value="10000" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
+  </Module>
+  <Module Name="X20IF10E1_1" Type="X20IF10E1-1" Version="1.3.0.0">
+    <Connection Connector="SS" TargetModule="X20BB81" TargetConnector="SS1" />
+    <Connector Name="IF1">
+      <Parameter ID="DtmRef" Value="FBDIF.Hilscher.PNIOControllerDTM2.NETX 100 RE/PNM" />
+      <Parameter ID="DtmId" Value="5926bdb0-bfe7-45dd-88e4-c4368abc1fd1" />
+    </Connector>
+    <Parameter ID="ConfigFile" Value="X20IF10E1_1.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb1" />
+    <Parameter ID="CycleTime" Value="2000" />
+  </Module>
+  <Module Name="X20PS9400a" Type="X20PS9400" Version="1.4.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12e" TargetConnector="SS" />
+    <Connection Connector="PS" TargetModule="X20BB81" TargetConnector="PS1" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12b" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12c" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12e" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB1F" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F1" Type="X20TB1F" Version="1.0.0.0" />
+  <Module Name="X20TB1F2" Type="X20TB1F" Version="1.0.0.0" />
+</Hardware>

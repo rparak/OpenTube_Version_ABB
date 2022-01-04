@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="PDFPageContent" height="948" width="1920" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="274" left="0" width="50" height="400" zIndex="0" borderStyle="none" cornerRadius="0px 20px 20px 0px" backColor="rgba(234, 240, 243, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="453" left="-167" width="378" height="38" zIndex="1" text="PDF" textColor="rgba(130, 168, 185, 1)" textAlign="center" rotation="270deg" fontSize="35px" bold="false" />
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="270" left="27" width="38" height="82" zIndex="2" image="Media/SVGsymbols/Symbols/PDF.svg" rotation="270deg" imageColor="rgba(130, 168, 185, 1)" />
+    <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="20" left="80" width="1620" height="900" zIndex="3" headerBackColor="rgba(255, 255, 255, 0)" backColor="rgba(234, 240, 243, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" width="350" zIndex="0" imageAlign="bottom" text="Production Manual" borderStyle="none" cornerRadius="5px 5px 0px 0px" backGroundGradient="linear-gradient(to bottom,#d5e2e7 0%,#d5e2e7 100%)" textColor="rgba(47, 111, 139, 1)" activeBorderStyle="none" activeCornerRadius="5px 5px 0px 0px" activeBorderColor="rgba(47, 111, 139, 1)" activeBackGroundGradient="linear-gradient(to bottom, #2f6f8b 0%,#2f6f8b 100%)" activeTextColor="rgba(234, 240, 243, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.PDFViewer" id="PDFViewer1" top="30" left="25" width="1550" height="810" zIndex="0" showToolbar="true" src="Media/PDF/covid19_YuMiLab_01.pdf" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

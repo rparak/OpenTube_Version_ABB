@@ -1,0 +1,5 @@
+VAR
+	barcode_scan_state_next : BOOL;
+	err_state_barcode : BOOL;
+	g_YuMiLab : main_global_str;
+END_VAR

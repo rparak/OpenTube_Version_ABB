@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.3.93 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">JXCP1.dtmdre</Object>
+    <Object Type="File">JXCP1.dtmtre</Object>
+    <Object Type="File">JXCP1.dtmdri</Object>
+  </Objects>
+</Package>

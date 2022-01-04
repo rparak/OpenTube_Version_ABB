@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.7.3.93 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">UAI_color_RGB_EN.png</Object>
+    <Object Type="File">logohead.png</Object>
+    <Object Type="File">CEITEC H4.png</Object>
+    <Object Type="File">scheme.PNG</Object>
+    <Object Type="File">IRB14000.png</Object>
+    <Object Type="File">pipette_t.PNG</Object>
+    <Object Type="File">test_tube.PNG</Object>
+    <Object Type="File">YuMiLab.svg</Object>
+    <Object Type="File">in_prog_c.png</Object>
+    <Object Type="File">suc_c.png</Object>
+    <Object Type="File">none_c.png</Object>
+    <Object Type="File">wait_c.png</Object>
+    <Object Type="File">IRB14050.png</Object>
+    <Object Type="File">IRB14050_n.png</Object>
+    <Object Type="File">YuMiLab.png</Object>
+    <Object Type="File">IRB1.png</Object>
+  </Objects>
+</Package>

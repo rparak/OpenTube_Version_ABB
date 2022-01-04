@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="A4.73">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="g_YuMiLab">
+          <Variable Name="scanner_m">
+            <Variable Name="data_mv">
+              <Variable Name="index" EnableArrayElements="True" />
+              <Variable Name="barcode_id" EnableArrayElements="True" />
+              <Variable Name="index_row" EnableArrayElements="True" />
+              <Variable Name="index_column" EnableArrayElements="True" />
+              <Variable Name="time" EnableArrayElements="True" />
+              <Variable Name="err_info" EnableArrayElements="True" />
+            </Variable>
+            <Variable Name="actual_tray_id" />
+            <Variable Name="actual_barcode_id" />
+            <Variable Name="rw_data_barcode">
+              <Variable Name="barcode_id" />
+              <Variable Name="tray_id" />
+              <Variable Name="error_code" />
+              <Variable Name="barcode_scanner_module_ok" />
+              <Variable Name="command" />
+              <Variable Name="tray_position_row" />
+              <Variable Name="tray_position_column" />
+            </Variable>
+            <Variable Name="reset_data_mv" />
+            <Variable Name="feid_cmd_str">
+              <Variable Name="set" />
+              <Variable Name="reset" />
+              <Variable Name="tray_id" />
+              <Variable Name="enable_mv" />
+            </Variable>
+          </Variable>
+          <Variable Name="robot_m">
+            <Variable Name="cmd">
+              <Variable Name="change_position" />
+              <Variable Name="in_position_1" />
+              <Variable Name="in_position_2" />
+              <Variable Name="in_position_3" />
+              <Variable Name="in_position_4" />
+              <Variable Name="in_position_5" />
+              <Variable Name="in_position_6" />
+              <Variable Name="in_position_7" />
+              <Variable Name="in_position_8" />
+              <Variable Name="in_position_9" />
+              <Variable Name="in_position_10" />
+              <Variable Name="in_position_11" />
+              <Variable Name="start_move" />
+              <Variable Name="power_on" />
+              <Variable Name="pp_to_main" />
+              <Variable Name="power_off" />
+              <Variable Name="stop_move" />
+              <Variable Name="home" />
+            </Variable>
+            <Variable Name="info_stage">
+              <Variable Name="Stage_1_TubeR">
+                <Variable Name="Status_str" />
+                <Variable Name="Status_int" />
+                <Variable Name="Barcode_str" EnableArrayElements="True" />
+                <Variable Name="Info" EnableArrayElements="True" />
+              </Variable>
+              <Variable Name="Stage_2_Barcode">
+                <Variable Name="Status_str" />
+                <Variable Name="Status_int" />
+              </Variable>
+              <Variable Name="Stage_3_TubeO">
+                <Variable Name="Status_str" />
+                <Variable Name="Status_int" />
+                <Variable Name="Info" />
+              </Variable>
+              <Variable Name="Stage_4_PipR">
+                <Variable Name="Status_str" />
+                <Variable Name="Status_int" />
+                <Variable Name="Barcode_str" EnableArrayElements="True" />
+                <Variable Name="Info" EnableArrayElements="True" />
+              </Variable>
+              <Variable Name="Stage_5_TroghP">
+                <Variable Name="Status_str" />
+                <Variable Name="Status_int" />
+                <Variable Name="Barcode_str" EnableArrayElements="True" />
+                <Variable Name="Info" EnableArrayElements="True" />
+              </Variable>
+              <Variable Name="Stage_6_Bin">
+                <Variable Name="Status_str" />
+                <Variable Name="Status_int" />
+                <Variable Name="Info" />
+              </Variable>
+            </Variable>
+            <Variable Name="actual_sate">
+              <Variable Name="In_Progress" />
+              <Variable Name="Wait" />
+              <Variable Name="Successful" />
+              <Variable Name="is_home" />
+              <Variable Name="is_motor_on" />
+              <Variable Name="is_motor_off" />
+            </Variable>
+            <Variable Name="parameters_info">
+              <Variable Name="Tube">
+                <Variable Name="param_c" />
+                <Variable Name="param_b" />
+                <Variable Name="param_a" />
+                <Variable Name="capacity" />
+                <Variable Name="type" />
+              </Variable>
+              <Variable Name="Pipette">
+                <Variable Name="param_c" />
+                <Variable Name="param_b" />
+                <Variable Name="param_a" />
+                <Variable Name="capacity" />
+                <Variable Name="type" />
+              </Variable>
+            </Variable>
+          </Variable>
+          <Variable Name="tube_opener">
+            <Variable Name="cmd">
+              <Variable Name="Power" />
+              <Variable Name="Home" />
+              <Variable Name="Start_Move" />
+              <Variable Name="Stop_Move" />
+              <Variable Name="Mode">
+                <Variable Name="Attach_T" />
+                <Variable Name="Detach_T" />
+                <Variable Name="Open_T" />
+                <Variable Name="Closed_T" />
+              </Variable>
+              <Variable Name="Reset" />
+            </Variable>
+            <Variable Name="actual_state">
+              <Variable Name="PowerOn" />
+              <Variable Name="isHome" />
+              <Variable Name="Mode">
+                <Variable Name="Attached" />
+                <Variable Name="Detached" />
+                <Variable Name="Open" />
+                <Variable Name="Close" />
+              </Variable>
+            </Variable>
+          </Variable>
+        </Variable>
+      </GlobalVariables>
+      <Task Name="Barcode_m" />
+      <Task Name="Robot_m">
+        <Variable Name="motor_on_off" />
+        <Variable Name="power_on_off" />
+      </Task>
+      <Task Name="Tube_Opene">
+        <Variable Name="jxcp_smc_fb_X_lin">
+          <Variable Name="Output">
+            <Variable Name="Current_Position" />
+          </Variable>
+        </Variable>
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" Version="0.0.0.0" OrderNumber="JXCP1">
+      <SourceFile OriginalFile="GSDML-V2.31-SMC-JXCP1-20160623.xml" TranslationFile="LK1LC0NW.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ISO15745Profile xmlns="http://www.profibus.com/GSDML/2003/11/DeviceProfile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\xsd\GSDML-DeviceProfile-V2.31.xsd">
+  <ProfileHeader>
+    <ProfileIdentification>PROFINET Device Profile</ProfileIdentification>
+    <ProfileRevision>1.00</ProfileRevision>
+    <ProfileName>Device Profile for PROFINET Devices</ProfileName>
+    <ProfileSource>PROFIBUS Nutzerorganisation e. V. (PNO)</ProfileSource>
+    <ProfileClassID>Device</ProfileClassID>
+    <ISO15745Reference>
+      <ISO15745Part>4</ISO15745Part>
+      <ISO15745Edition>1</ISO15745Edition>
+      <ProfileTechnology>GSDML</ProfileTechnology>
+    </ISO15745Reference>
+  </ProfileHeader>
+  <ProfileBody>
+    <DeviceIdentity VendorID="0x0083" DeviceID="0x000F">
+      <InfoText TextId="T_ID_DEV_DESCRIPTION" />
+      <VendorName Value="SMC Corporation" />
+    </DeviceIdentity>
+    <DeviceFunction>
+      <Family MainFamily="Controllers" ProductFamily="SMC JXC" />
+    </DeviceFunction>
+    <ApplicationProcess>
+      <DeviceAccessPointList>
+        <DeviceAccessPointItem ID="DAP 1" PhysicalSlots="0..2" ModuleIdentNumber="0x00000001" MinDeviceInterval="8" ImplementationType="TPS-1" DNS_CompatibleName="JXCP" FixedInSlots="0" ExtendedAddressAssignmentSupported="false" ObjectUUID_LocalIndex="1" MultipleWriteSupported="true" ParameterizationSpeedupSupported="false" DeviceAccessSupported="true" RequiredSchemaVersion="V2.31" PNIO_Version="V2.32" NameOfStationNotTransferable="true" SharedDeviceSupported="false" LLDP_NoD_Supported="true" ResetToFactoryModes="2" CheckDeviceID_Allowed="false">
+          <ModuleInfo>
+            <Name TextId="T_ID_DAP" />
+            <InfoText TextId="T_ID_DAP_DESCRIPTION" />
+            <VendorName Value="SMC Corporation" />
+            <OrderNumber Value="JXCP1" />
+          </ModuleInfo>
+		  <CertificationInfo ApplicationClass="Isochronous" ConformanceClass="C" NetloadClass="III"/>
+          <SubslotList>
+            <SubslotItem SubslotNumber="32768" TextId="T_ID_SS_INTERFACE" />
+            <SubslotItem SubslotNumber="32769" TextId="T_ID_SS_PORT1" />
+            <SubslotItem SubslotNumber="32770" TextId="T_ID_SS_PORT2" />
+          </SubslotList>
+	      <IOConfigData MaxInputLength="340" MaxOutputLength="340" />
+          <UseableModules>
+            <ModuleItemRef ModuleItemTarget="ID_MOD_INPUT36"  FixedInSlots="1" />
+            <ModuleItemRef ModuleItemTarget="ID_MOD_OUTPUT36"  FixedInSlots="2" />
+          </UseableModules>
+          <VirtualSubmoduleList>
+            <VirtualSubmoduleItem ID="DAP 1" SubmoduleIdentNumber="0x00000001" Writeable_IM_Records="1 2 3">
+              <IOData IOPS_Length="1" IOCS_Length="1" />
+ 	            <ModuleInfo>
+                <Name TextId="T_ID_DAP" />
+                <InfoText TextId="T_ID_DAP_DESCRIPTION" />
+                </ModuleInfo>
+              <IsochroneMode T_DC_Base="4" T_DC_Min="1" T_DC_Max="8" T_IO_Base="1000" T_IO_InputMin="40" T_IO_OutputMin="40" IsochroneModeRequired="false" />
+            </VirtualSubmoduleItem>
+          </VirtualSubmoduleList>
+          <SystemDefinedSubmoduleList>
+            <InterfaceSubmoduleItem ID="Interface" SubslotNumber="32768" SubmoduleIdentNumber="0x0002" IsochroneModeSupported="true" SupportedRT_Classes="RT_CLASS_1;RT_CLASS_3" IsochroneModeInRT_Classes="RT_CLASS_3" TextId="T_ID_DAP_INTERFACE_MODULE" SupportedProtocols="LLDP;SNMP" SupportedMibs="MIB2" NetworkComponentDiagnosisSupported="true" DCP_BoundarySupported="true" PTP_BoundarySupported="true" DCP_HelloSupported="false">
+              <RT_Class3Properties StartupMode="Legacy;Advanced" MaxBridgeDelay="3860" MaxNumberIR_FrameData="128" ForwardingMode="Relative"/>
+              <SynchronisationMode SupportedRole="SyncSlave" MaxLocalJitter="10" T_PLL_MAX="1000" SupportedSyncProtocols="PTCP" />
+              <ApplicationRelations StartupMode="Legacy;Advanced" NumberOfAdditionalInputCR="0" NumberOfAdditionalMulticastProviderCR="0" NumberOfAdditionalOutputCR="0" NumberOfMulticastConsumerCR="0" PullModuleAlarmSupported="false" NumberOfAR="1">
+                <TimingProperties SendClock="8 16 32" ReductionRatio="1 2 4 8 16 32 64 128 256 512" />
+                <RT_Class3TimingProperties SendClock="8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128" ReductionRatio="1" ReductionRatioPow2="2 4 8 16 32 64 128" />
+              </ApplicationRelations>
+              <MediaRedundancy SupportedRole="Client" />
+            </InterfaceSubmoduleItem>
+            <PortSubmoduleItem ID="Port 1" SubslotNumber="32769" SubmoduleIdentNumber="0x0003" MAUTypes="16" TextId="T_ID_PORT1" MaxPortRxDelay="173" MaxPortTxDelay="74" PortDeactivationSupported="false" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true" CheckMAUTypeSupported="true"/>
+            <PortSubmoduleItem ID="Port 2" SubslotNumber="32770" SubmoduleIdentNumber="0x0003" MAUTypes="16" TextId="T_ID_PORT2" MaxPortRxDelay="173" MaxPortTxDelay="74" PortDeactivationSupported="false" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true" CheckMAUTypeSupported="true"/>
+          </SystemDefinedSubmoduleList>
+          <Graphics>
+            <GraphicItemRef Type="DeviceSymbol" GraphicItemTarget="ID_Graph_2" />
+          </Graphics>
+        </DeviceAccessPointItem>
+      </DeviceAccessPointList>
+      
+	  <ModuleList>
+        <ModuleItem ID="ID_MOD_OUTPUT36" ModuleIdentNumber="0x0000010">
+          <ModuleInfo>
+            <Name TextId="T_ID_MODULE_NAME_COM1" />
+            <InfoText TextId="T_ID_INFO_TEXT_MODULE_COM" />
+          </ModuleInfo>                  
+          <VirtualSubmoduleList>
+            <VirtualSubmoduleItem ID="ID_SLOT2" SubmoduleIdentNumber="0x0001" API="0">
+              <IOData>
+                <Output Consistency="All items consistency">
+                  <DataItem DataType="OctetString" Length="36" TextId="T_ID_IO_OUTPUT" UseAsBits="true"  /> 
+                </Output>
+              </IOData>
+              <ModuleInfo>
+                <Name TextId="T_ID_MODULE_NAME_COM1" />
+                <InfoText TextId="T_ID_INFO_TEXT_MODULE_COM" />
+              </ModuleInfo>                  
+            </VirtualSubmoduleItem>
+          </VirtualSubmoduleList>       
+        </ModuleItem>
+               
+        <ModuleItem ID="ID_MOD_INPUT36" ModuleIdentNumber="0x0000011">
+          <ModuleInfo>
+            <Name TextId="T_ID_MODULE_NAME_COM2" />
+            <InfoText TextId="T_ID_INFO_TEXT_MODULE_COM" />
+          </ModuleInfo>                  
+          <VirtualSubmoduleList>
+            <VirtualSubmoduleItem ID="ID_SLOT1" SubmoduleIdentNumber="0x0001" API="0">
+              <IOData>
+                <Input Consistency="All items consistency">
+                  <DataItem DataType="OctetString" Length="36" TextId="T_ID_IO_INPUT" UseAsBits="true"  />
+                </Input>
+              </IOData>
+              <ModuleInfo>
+                <Name TextId="T_ID_MODULE_NAME_COM2" />
+                <InfoText TextId="T_ID_INFO_TEXT_MODULE_COM" />
+              </ModuleInfo>                  
+            </VirtualSubmoduleItem>
+          </VirtualSubmoduleList>       
+        </ModuleItem>
+      </ModuleList>
+         
+      <ChannelDiagList>
+        <ChannelDiagItem ErrorType="256">
+          <Name TextId="T_ID_CHANNEL_256" />
+		  <Help TextId="T_ID_CHANNEL_256_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="257">
+          <Name TextId="T_ID_CHANNEL_257" />
+		  <Help TextId="T_ID_CHANNEL_257_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="258">
+          <Name TextId="T_ID_CHANNEL_258" />
+		  <Help TextId="T_ID_CHANNEL_258_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="259">
+          <Name TextId="T_ID_CHANNEL_259" />
+		  <Help TextId="T_ID_CHANNEL_259_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="260">
+          <Name TextId="T_ID_CHANNEL_260" />
+		  <Help TextId="T_ID_CHANNEL_260_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="261">
+          <Name TextId="T_ID_CHANNEL_261" />
+		  <Help TextId="T_ID_CHANNEL_261_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="262">
+          <Name TextId="T_ID_CHANNEL_262" />
+		  <Help TextId="T_ID_CHANNEL_262_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="263">
+          <Name TextId="T_ID_CHANNEL_263" />
+		  <Help TextId="T_ID_CHANNEL_263_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="264">
+          <Name TextId="T_ID_CHANNEL_264" />
+		  <Help TextId="T_ID_CHANNEL_264_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="265">
+          <Name TextId="T_ID_CHANNEL_265" />
+		  <Help TextId="T_ID_CHANNEL_265_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="266">
+          <Name TextId="T_ID_CHANNEL_266" />
+		  <Help TextId="T_ID_CHANNEL_266_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="268">
+          <Name TextId="T_ID_CHANNEL_268" />
+		  <Help TextId="T_ID_CHANNEL_268_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="270">
+          <Name TextId="T_ID_CHANNEL_270" />
+		  <Help TextId="T_ID_CHANNEL_270_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="271">
+          <Name TextId="T_ID_CHANNEL_271" />
+		  <Help TextId="T_ID_CHANNEL_271_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="272">
+          <Name TextId="T_ID_CHANNEL_272" />
+		  <Help TextId="T_ID_CHANNEL_272_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="273">
+          <Name TextId="T_ID_CHANNEL_273" />
+		  <Help TextId="T_ID_CHANNEL_273_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="274">
+          <Name TextId="T_ID_CHANNEL_274" />
+		  <Help TextId="T_ID_CHANNEL_274_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="275">
+		  <Name TextId="T_ID_CHANNEL_275" />
+		  <Help TextId="T_ID_CHANNEL_275_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="276">
+          <Name TextId="T_ID_CHANNEL_276" />
+		  <Help TextId="T_ID_CHANNEL_276_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="277">
+          <Name TextId="T_ID_CHANNEL_277" />
+		  <Help TextId="T_ID_CHANNEL_277_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="278">
+          <Name TextId="T_ID_CHANNEL_278" />
+		  <Help TextId="T_ID_CHANNEL_278_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="279">
+          <Name TextId="T_ID_CHANNEL_279" />
+		  <Help TextId="T_ID_CHANNEL_279_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="280">
+		   <Name TextId="T_ID_CHANNEL_280" />
+		   <Help TextId="T_ID_CHANNEL_280_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="281">
+          <Name TextId="T_ID_CHANNEL_281" />
+		  <Help TextId="T_ID_CHANNEL_281_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="283">
+          <Name TextId="T_ID_CHANNEL_283" />
+		  <Help TextId="T_ID_CHANNEL_283_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="284">
+          <Name TextId="T_ID_CHANNEL_284" />
+		  <Help TextId="T_ID_CHANNEL_284_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="285">
+          <Name TextId="T_ID_CHANNEL_285" />
+		  <Help TextId="T_ID_CHANNEL_285_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="286">
+          <Name TextId="T_ID_CHANNEL_286" />
+		  <Help TextId="T_ID_CHANNEL_286_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="287">
+          <Name TextId="T_ID_CHANNEL_287" />
+		  <Help TextId="T_ID_CHANNEL_287_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="288">
+          <Name TextId="T_ID_CHANNEL_288" />
+		  <Help TextId="T_ID_CHANNEL_288_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="289">
+          <Name TextId="T_ID_CHANNEL_289" />
+		  <Help TextId="T_ID_CHANNEL_289_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="290">
+          <Name TextId="T_ID_CHANNEL_290" />
+		  <Help TextId="T_ID_CHANNEL_290_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="291">
+          <Name TextId="T_ID_CHANNEL_291" />
+		  <Help TextId="T_ID_CHANNEL_291_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="292">
+          <Name TextId="T_ID_CHANNEL_292" />
+		  <Help TextId="T_ID_CHANNEL_292_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="293">
+          <Name TextId="T_ID_CHANNEL_293" />
+		  <Help TextId="T_ID_CHANNEL_293_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="294">
+          <Name TextId="T_ID_CHANNEL_294" />
+		  <Help TextId="T_ID_CHANNEL_294_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="295">
+          <Name TextId="T_ID_CHANNEL_295" />
+		  <Help TextId="T_ID_CHANNEL_295_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="296">
+          <Name TextId="T_ID_CHANNEL_296" />
+		  <Help TextId="T_ID_CHANNEL_296_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="297">
+          <Name TextId="T_ID_CHANNEL_297" />
+		  <Help TextId="T_ID_CHANNEL_297_HELP" />
+        </ChannelDiagItem>
+        <ChannelDiagItem ErrorType="298">
+          <Name TextId="T_ID_CHANNEL_298" />
+		  <Help TextId="T_ID_CHANNEL_298_HELP" />
+        </ChannelDiagItem>
+      </ChannelDiagList>
+      <GraphicsList>
+        <GraphicItem ID="ID_Graph_1" GraphicFile="GSDML-0083-000F-JXCP1" />
+        <GraphicItem ID="ID_Graph_2" GraphicFile="GSDML-0083-000F-JXCP1" />
+      </GraphicsList>
+      <ExternalTextList>
+        <PrimaryLanguage>
+          <!--Device Access Point information etc -->
+          <Text TextId="T_ID_DEV_DESCRIPTION" Value="JXCP1" />
+          <Text TextId="T_ID_DAP_DESCRIPTION" Value="PROFINET IO Motor Controller" />
+          <Text TextId="T_ID_DAP" Value="JXCP1" />
+          <Text TextId="T_ID_SS_INTERFACE" Value="X1" />
+          <Text TextId="T_ID_SS_PORT1" Value="P1" />
+          <Text TextId="T_ID_SS_PORT2" Value="P2" />
+          <Text TextId="T_ID_DAP_INTERFACE_MODULE" Value="Interface" />
+          <Text TextId="T_ID_PORT1" Value="Port 1" />
+          <Text TextId="T_ID_PORT2" Value="Port 2" />
+          <Text TextId="T_ID_IO_INPUT" Value="IO Input" />
+          <Text TextId="T_ID_IO_OUTPUT" Value="IO Output" />
+          <Text TextId="T_ID_INPUT_DATA" Value="Digital Input" />
+          <Text TextId="T_ID_OUTPUT_DATA" Value="Digital Output" />
+          <Text TextId="T_ID_MODULE_NAME_DIAG" Value="Port Diagnostics" />
+          <Text TextId="T_ID_INFO_TEXT_MODULE_DIAG" Value="Input data corresponding to port diagnostics." />
+          <Text TextId="T_ID_MODULE_NAME_COM1" Value="JXCP1_OUTPUT" />
+          <Text TextId="T_ID_MODULE_NAME_COM2" Value="JXCP1_INPUT" />
+          <Text TextId="T_ID_INFO_TEXT_MODULE_COM" Value="Controller for Actuator" />
+            
+          <!-- Diagnostic (alarm) error texts -->
+          <Text TextId="T_ID_CHANNEL_256" Value="(001) WRST entered before return to origin complete" />
+          <Text TextId="T_ID_CHANNEL_257" Value="(002) WRST entered while travelling" />
+          <Text TextId="T_ID_CHANNEL_258" Value="(048) Operation data error" />
+          <Text TextId="T_ID_CHANNEL_259" Value="(049) System parameter error" />
+          <Text TextId="T_ID_CHANNEL_260" Value="(050) Deceleration insufficient" />
+          <Text TextId="T_ID_CHANNEL_261" Value="(051) Position No.error" />
+          <Text TextId="T_ID_CHANNEL_262" Value="(052) Stroke limit" />
+          <Text TextId="T_ID_CHANNEL_263" Value="(096) Pushing operation error" />
+          <Text TextId="T_ID_CHANNEL_264" Value="(097) Return to origin error" />
+          <Text TextId="T_ID_CHANNEL_265" Value="(098) Servo OFF operation" />
+		  <Text TextId="T_ID_CHANNEL_266" Value="(099) Return to origin incomplete" />
+          <Text TextId="T_ID_CHANNEL_268" Value="(101) Absolute unit misalignment" />
+          <Text TextId="T_ID_CHANNEL_270" Value="(103) Origin sensor undetected" />
+          <Text TextId="T_ID_CHANNEL_271" Value="(104) Absolute unit not connected to battery" />
+          <Text TextId="T_ID_CHANNEL_272" Value="(105) Absolute unit battery temperature increase" />
+          <Text TextId="T_ID_CHANNEL_273" Value="(106) Absolute unit communication error" />
+          <Text TextId="T_ID_CHANNEL_274" Value="(107) Absolute unit battery voltage drop" />
+          <Text TextId="T_ID_CHANNEL_275" Value="(144) Over Speed" />
+          <Text TextId="T_ID_CHANNEL_276" Value="(145) Power and voltage error" />
+          <Text TextId="T_ID_CHANNEL_277" Value="(146) Heat" />
+          <Text TextId="T_ID_CHANNEL_278" Value="(147) Control power/voltage error" />
+          <Text TextId="T_ID_CHANNEL_279" Value="(148) Overload" />
+          <Text TextId="T_ID_CHANNEL_280" Value="(149) Larger differential" />
+          <Text TextId="T_ID_CHANNEL_281" Value="(150) Communication error(Serial/PROFINET)" />
+          <Text TextId="T_ID_CHANNEL_283" Value="(152) Absolute unit not positioned" />
+          <Text TextId="T_ID_CHANNEL_284" Value="(153) Absolute unit ID different" />
+          <Text TextId="T_ID_CHANNEL_285" Value="(154) Absolute unit disconnected" />
+          <Text TextId="T_ID_CHANNEL_286" Value="(155) Absolute unit over rotation" />
+          <Text TextId="T_ID_CHANNEL_287" Value="(156) Absolute unit power/voltage drop" />
+          <Text TextId="T_ID_CHANNEL_288" Value="(192) Encoder alarm(disconnected)" />
+          <Text TextId="T_ID_CHANNEL_289" Value="(193) Polarity not found" />
+          <Text TextId="T_ID_CHANNEL_290" Value="(194) Over current" />
+          <Text TextId="T_ID_CHANNEL_291" Value="(195) Current sensor off-set error" />
+          <Text TextId="T_ID_CHANNEL_292" Value="(196) Differential overflow" />
+          <Text TextId="T_ID_CHANNEL_293" Value="(197) EEPROM error" />
+          <Text TextId="T_ID_CHANNEL_294" Value="(198) WDT error" />
+          <Text TextId="T_ID_CHANNEL_295" Value="(206) WDT error2" />
+          <Text TextId="T_ID_CHANNEL_296" Value="(058) Operation data error(numerical instruction)" />
+          <Text TextId="T_ID_CHANNEL_297" Value="(061) Position No.error(numerical instruction)" />
+          <Text TextId="T_ID_CHANNEL_298" Value="(062) Stroke limit(numerical instruction)" />
+          
+		  <!-- Diagnostic (alarm) help texts -->
+		  <Text TextId="T_ID_CHANNEL_256_HELP" Value="(001) WRST was turned on while SETON is OFF" />
+          <Text TextId="T_ID_CHANNEL_257_HELP" Value="(002) WRST was turned on while BUSY is ON" />
+          <Text TextId="T_ID_CHANNEL_258_HELP" Value="(048) Incorrect operation data" />
+          <Text TextId="T_ID_CHANNEL_259_HELP" Value="(049) Incorrect system parameter data" />
+          <Text TextId="T_ID_CHANNEL_260_HELP" Value="(050) Instructed operation unable to decelerate" />
+          <Text TextId="T_ID_CHANNEL_261_HELP" Value="(051) Instructed unregistered data number" />
+          <Text TextId="T_ID_CHANNEL_262_HELP" Value="(052) Beyond stroke (+-)" />
+		  <Text TextId="T_ID_CHANNEL_263_HELP" Value="(096) Pushed back while pushing" />
+          <Text TextId="T_ID_CHANNEL_264_HELP" Value="(097) Return to origin not complete within set time" />
+          <Text TextId="T_ID_CHANNEL_265_HELP" Value="(098) Instructed operation while servo is OFF" />
+		  <Text TextId="T_ID_CHANNEL_266_HELP" Value="(099) Drive was turned on while return to origin was incomplete" />
+          <Text TextId="T_ID_CHANNEL_268_HELP" Value="(101) Motor was rotated while data from absolute encoder was being transmitted" />
+          <Text TextId="T_ID_CHANNEL_270_HELP" Value="(103) Origin switch direction" />
+          <Text TextId="T_ID_CHANNEL_271_HELP" Value="(104) Controller is not connected to battery" />
+          <Text TextId="T_ID_CHANNEL_272_HELP" Value="(105) Temperature of battery is beyond set value" />
+          <Text TextId="T_ID_CHANNEL_273_HELP" Value="(106) Error when communicating with absolute encoder" />
+          <Text TextId="T_ID_CHANNEL_274_HELP" Value="(107) Battery voltage drop" />
+          <Text TextId="T_ID_CHANNEL_275_HELP" Value="(144) Number of motor rotations exceeds set value" />
+          <Text TextId="T_ID_CHANNEL_276_HELP" Value="(145) Power/voltage exceed set range" />
+          <Text TextId="T_ID_CHANNEL_277_HELP" Value="(146) Temperature of controller exceeds set value" />
+          <Text TextId="T_ID_CHANNEL_278_HELP" Value="(147) Control power exceeds set range" />
+          <Text TextId="T_ID_CHANNEL_279_HELP" Value="(148) Large current for a certain period of time" />
+          <Text TextId="T_ID_CHANNEL_280_HELP" Value="(149) Not reaching target position within set value" />
+          <Text TextId="T_ID_CHANNEL_281_HELP" Value="(150) Communication error occurred" />
+          <Text TextId="T_ID_CHANNEL_283_HELP" Value="(152) Absolute unit ENC error" />
+          <Text TextId="T_ID_CHANNEL_284_HELP" Value="(153) Absolute unit ID different" />
+          <Text TextId="T_ID_CHANNEL_285_HELP" Value="(154) Absolute unit is not connected" />
+          <Text TextId="T_ID_CHANNEL_286_HELP" Value="(155) Motor is rotated at excessive speed when power is OFF" />
+          <Text TextId="T_ID_CHANNEL_287_HELP" Value="(156) Power or voltage supplied to absolute unit drops below set value" />
+          <Text TextId="T_ID_CHANNEL_288_HELP" Value="(192) Encoder alarm" />
+          <Text TextId="T_ID_CHANNEL_289_HELP" Value="(193) Polarity is not found within set time" />
+          <Text TextId="T_ID_CHANNEL_290_HELP" Value="(194) Output current is extremely high" />
+          <Text TextId="T_ID_CHANNEL_291_HELP" Value="(195) Current sensor error" />
+          <Text TextId="T_ID_CHANNEL_292_HELP" Value="(196) Position differential counter overflow" />
+          <Text TextId="T_ID_CHANNEL_293_HELP" Value="(197) Memory details abnormal" />
+          <Text TextId="T_ID_CHANNEL_294_HELP" Value="(198) CPU abnormal operation" />
+          <Text TextId="T_ID_CHANNEL_295_HELP" Value="(206) WDT error2" />
+          <Text TextId="T_ID_CHANNEL_296_HELP" Value="(058) Incorrect operation data(numerical instruction)" />
+          <Text TextId="T_ID_CHANNEL_297_HELP" Value="(061) Instructed unregistered data number(numerical instruction)" />
+          <Text TextId="T_ID_CHANNEL_298_HELP" Value="(062) Beyond stroke (+-)(numerical instruction)" />
+	    </PrimaryLanguage>
+      </ExternalTextList>
+    </ApplicationProcess>
+  </ProfileBody>
+</ISO15745Profile>

@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="binding_0" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+		<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.index" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="TableItem1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="TableItem2" attribute="stringValue" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.time" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="TableItem5" attribute="stringValue" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.index_row" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="TableItem3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.index_column" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="TableItem4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.err_info" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="TableItemImageList1" attribute="selectedIndex" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.reset_data_mv" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="MomentaryPushButton5" attribute="value" />
+</Binding>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.actual_tray_id" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput45" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.actual_tray_id" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="TextOutput3" attribute="value" />
+</Binding>
+	<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.feid_cmd_str.reset" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton11" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.feid_cmd_str.set" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton10" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.feid_cmd_str.enable_mv" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="TextInput1" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.feid_cmd_str.tray_id" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="TextInput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.actual_barcode_id" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.actual_barcode_id" attribute="value" />
+<Target xsi:type="brease" contentRefId="BarcodePageContent" widgetRefId="TextOutput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Tube.param_a" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput25" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Tube.param_b" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput26" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Tube.param_c" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput27" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Tube.capacity" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput28" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Tube.type" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="TextPicker3" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Pipette.type" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="TextPicker4" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.actual_sate.In_Progress" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput24" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.actual_sate.Successful" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput22" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Pipette.capacity" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput32" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Pipette.param_c" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput31" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Pipette.param_b" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput30" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.parameters_info.Pipette.param_a" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput29" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.actual_sate.Wait" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput23" attribute="value" />
+</Binding>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_2_Barcode.Status_int" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList8" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_2_Barcode.Status_str" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_6_Bin.Info" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList11" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_3_TubeO.Info" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput44" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_3_TubeO.Status_str" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_6_Bin.Status_str" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_6_Bin.Info" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="NumericOutput22" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_6_Bin.Status_int" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList13" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Status_int" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList12" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Status_int" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList10" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Status_str" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Status_str" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Status_str" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput4" attribute="value" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Status_int" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList9" attribute="selectedIndex" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.cmd.home" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.cmd.start_move" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.cmd.stop_move" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.actual_sate.is_home" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList9" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.cmd.pp_to_main" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton12" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Robot_m:motor_on_off" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList8" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Robot_m:power_on_off" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ToggleSwitch1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput19" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput18" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput17" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput16" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput15" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput14" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput13" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput12" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput11" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[11]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput31" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput30" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput29" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput28" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput27" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput26" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput25" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput24" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput23" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput22" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput21" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[11]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput20" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput43" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput42" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput41" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput40" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput39" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput38" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput37" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput36" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput35" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput34" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput33" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.scanner_m.data_mv.barcode_id[11]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="TextOutput32" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList23" attribute="selectedIndex" />
+</Binding>
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList24" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList25" attribute="selectedIndex" />
+</Binding>
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList20" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList21" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList22" attribute="selectedIndex" />
+</Binding>
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList17" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList18" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList19" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList14" attribute="selectedIndex" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList15" attribute="selectedIndex" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_1_TubeR.Info[11]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList16" attribute="selectedIndex" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList47" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList48" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList49" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList44" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList45" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList46" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList41" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList42" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList43" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList38" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList39" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_4_PipR.Info[11]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList40" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList35" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList36" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList37" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList32" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList33" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList34" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList29" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList30" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList31" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList26" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[10]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList27" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.robot_m.info_stage.Stage_5_TroghP.Info[11]" attribute="value" />
+<Target xsi:type="brease" contentRefId="ProductionPageContent" widgetRefId="ImageList28" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.tube_opener.cmd.Power" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ToggleSwitch2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.tube_opener.cmd.Home" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.tube_opener.cmd.Start_Move" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.tube_opener.cmd.Stop_Move" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.tube_opener.actual_state.PowerOn" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList10" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:g_YuMiLab.tube_opener.actual_state.isHome" attribute="value" />
+<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList11" attribute="selectedIndex" />
+</Binding>
+</Bindings>
+</BindingsSet>
