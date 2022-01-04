@@ -86,6 +86,21 @@ Computer-aided design (CAD)
  <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/wiring_scheme.png" width="550" height="325">
 </p>
 
+**3D Print:**
+
+<p align="center">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/3d_print.png" width="550" height="325">
+</p>
+
+**ABB RobotStudio:**
+
+<p align="center">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_dual_arm_ph1.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision1.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision2.png" width="550" height="325">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/yumi_single_arm_ph1_vision3.png" width="550" height="325">
+</p>
+
 ## Result:
 Youtube: https://www.youtube.com/watch?v=WiMssWtnBL8&t=161s
 
