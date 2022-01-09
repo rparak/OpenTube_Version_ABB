@@ -64,6 +64,10 @@ Czech radio:
 
 https://brno.rozhlas.cz/vedci-z-brnenskeho-vut-navrhli-roboticke-pracoviste-pomuze-laborantum-zpracovat-8205399
 
+<p align="center">
+ <img src="https://github.com/rparak/OpenTube_Version_ABB/blob/main/images/CT.png" width="800" height="450">
+</p>
+
 ## Project Hierarchy:
 
 **Repositary [/OpenTube_Version_ABB/]:**
